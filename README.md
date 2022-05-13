@@ -161,3 +161,53 @@ touch palindrome-py
 code palindrome-py
 Make your code!!!
 mypy palindrome-py --check-untyped-defs
+
+--------------------------------------------------
+Scope: scope of the variables
+
+The scope is the scope that the variables have. It depends on where you declare or initialize a variable to know if you have access. Golden Rule:
+
+a variable is only available within the region where it was created
+
+Local Scope
+It is the region that corresponds to the scope of a function, where we can have one or more variables, the variables will be accessible only in this region and will not be visible to other regions
+
+Global Scope
+By writing one or more variables in this region, they can be accessible from any part of the code.
+
+------------------------------------------------------
+closures
+
+
+rules for finding a closure
+
+ * we must have a nested function
+ * the nested function must reference a value of a higher scope
+ * the function that wraps the nested must return it too
+
+when we have a class that has only one method
+when we work with decorators
+
+```python
+
+	def main():
+		a = 1
+		def nested():
+			print(a)
+		return nested
+
+	my_func = main()
+	my_func()
+```
+
+It is a way to access variables from other scopes through a nested function. The nested function is returned and it remembers the value it prints, although when it is executed it is not within its scope.
+
+
+Rules for finding a Closure
+We must have a nested function
+The nested function must reference a value of a higher scope
+The function that wraps the nested function must also return it
+
+-------------------------
+
+Programming closures
