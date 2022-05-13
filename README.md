@@ -135,3 +135,29 @@ coordinates: CoordinatesType = [
 mypy module
 .
 The mypy module is complemented by the typing module as it will allow you to display weak typing errors in Python.
+
+
+
+--------------
+Practicing static typing
+
+Following the tips of intermediate python course, from terminal:
+mkdir new_folder
+git init
+py -m venv venv
+touch .gitignore
+type in .gitignore file
+
+```python
+
+# Ignore the enviroment files when you push to github.
+venv
+```
+
+avenv (alias to activate venv: .\venv\Scripts\activate)
+pip install mypy
+pip list (to check mypy)
+touch palindrome-py
+code palindrome-py
+Make your code!!!
+mypy palindrome-py --check-untyped-defs
