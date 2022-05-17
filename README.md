@@ -211,3 +211,47 @@ The function that wraps the nested function must also return it
 -------------------------
 
 Programming closures
+
+
+-------------------------
+decorators
+
+
+-------------------------
+Programming decorators
+
+
+
+-------------------------
+Iterators
+
+-------------------------
+The Fibonacci Sequence
+
+-------------------------
+generators
+
+-------------------------
+Improving our Fibonacci sequence
+
+
+---------------------------
+sets
+
+---------------------------
+Operations with sets
+
+
+----------------------------
+Removing duplicates from a list
+
+
+-------------------------------
+Date management
+
+
+-----------------------------
+Time zones
+
+
+
