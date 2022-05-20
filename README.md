@@ -223,6 +223,9 @@ image
 
 It can be done in a simpler way, with syntactic sugar (sugar syntax): When we have a code that is embellished so that we see it in a more static way, helping to understand the code more easily. In this way, we have the above code:
 
+image
+
+This allows you to save code by implementing features (decorators) common to different functions:
 
 -------------------------
 Programming decorators
@@ -232,6 +235,85 @@ Programming decorators
 -------------------------
 Iterators
 
+Advanced data structures
+Iterators
+Before understanding what iterators are, we must first understand iterables.
+
+They are all those objects that we can go through in a cycle. They are those data structures divisible into single elements that I can go through in a loop.
+
+But in Python things are not like that. Iterables become iterators.
+
+Example:
+
+```python
+# Creando un iterador
+
+my_list = [1,2,3,4,5]
+my_iter = iter(my_list)
+
+# Iterando un iterador
+
+print(next(my_iter))
+
+# Cuando no quedan datos, la excepción StopIteration es elevada
+
+```
+
+```python
+# Creando un iterador
+
+my_list = [1,2,3,4,5]
+my_iter = iter(my_list)
+
+# Iterando un iterador
+
+while True: #ciclo infinito
+  try:
+    element = next(my_iter)
+    print(element)
+  except StopIteration:
+    break
+
+```
+
+Shocking moment: The "for" loop within Python does not exist. It's a while with StopIteration. 🤯🤯🤯
+
+```python
+my_list = [1,2,3,4,5]
+
+for element in my_list:
+  print(element)
+
+```
+evenNumbers.py:
+
+```python
+
+class EvenNumbers:
+  """Clase que implementa un iterador de todos los números pares,
+  o los números pares hasta un máximo
+  """
+
+  #* Constructor de la clase
+  def __init__(self, max = None): #self hace referencia al objeto futuro que voy a crear con esta clase
+    self.max = max
+
+
+  # Método para tener elementos o atributos que voy a necesitar para que el iterador funcione
+  def __iter__(self):
+    self.num = 0 #Primer número par
+    #* Convertir un iterable en un iterador
+    return self
+
+  # Método para tener la función "next" de Python
+  def __next__(self):
+    if not self.max or self.num <= self.max:
+      result = self.num
+      self.num += 2
+      return result
+    else:
+      raise StopIteration
+```
 -------------------------
 The Fibonacci Sequence
 
