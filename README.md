@@ -212,9 +212,16 @@ The function that wraps the nested function must also return it
 
 Programming closures
 
+image
 
 -------------------------
 decorators
+
+A decorator is a function that receives another function as a parameter, adds things to it, and returns a different function. They have the same structure as Closures but instead of variables what is sent is a function. Example:
+
+image
+
+It can be done in a simpler way, with syntactic sugar (sugar syntax): When we have a code that is embellished so that we see it in a more static way, helping to understand the code more easily. In this way, we have the above code:
 
 
 -------------------------
