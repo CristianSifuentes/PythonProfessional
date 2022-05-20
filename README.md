@@ -499,10 +499,60 @@ print(my_set2) #Output {'hola', 1}
 Sets are immutable
 
 Sets are mutable; its elements are immutable.
+
 ---------------------------
 Operations with sets
 
+Union
+Result of putting together all the elements that have both, combining both sets
 
+```python
+set_1 = {1, 2, 3}
+set_2 = {3, 4, 5}
+set_3 = set_1 | set_2 #  -> {1, 2, 3, 4, 5}
+
+# O de forma mas explicita
+set_1.union(set_2) #  -> {1, 2, 3, 4, 5}
+```
+Intersection
+Those that are repeated in both sets
+
+```python
+
+set_1 = {1, 2, 3}
+set_2 = {3, 4, 5}
+set_3 = set_1 & set_2 #  -> {3}
+
+# O de forma mas explicita
+set_1.intersection(set_2) #  -> {3}
+```
+
+Difference
+Take two sets and from one remove all the elements that the other has
+
+```python
+
+set_1 = {1, 2, 3}
+set_2 = {3, 4, 5}
+set_3 = set_1 - set_2 #  -> {1, 2}
+
+# O de forma mas explicita
+set_1.difference(set_2) #  -> {1, 2}
+```
+
+
+Symmetric Difference
+Take all elements except those that are repeated
+
+```python
+
+set_1 = {1, 2, 3}
+set_2 = {3, 4, 5}
+set_3 = set_1 ^ set_2 #  -> {1, 2, 4, 5}
+
+# O de forma mas explicita
+set_1.symmetric_difference(set_2) #  -> {1, 2, 4, 5}
+```
 ----------------------------
 Removing duplicates from a list
 
