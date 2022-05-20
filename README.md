@@ -362,6 +362,46 @@ if __name__ == '__main__':
 -------------------------
 generators
 
+Sugar syntax for iterators. Generators are functions that store a state. It is an iterator written in a simpler way.
+
+```python
+
+def my_gen():
+
+  """un ejemplo de generadores"""
+
+  print('Hello world!')
+  n = 0
+  yield n # es exactamente lo mismo que return pero detiene la función, cuando se vuelva a llamar a la función, seguirá desde donde se quedó
+
+  print('Hello heaven!')
+  n = 1
+  yield n
+
+  print('Hello hell!')
+  n = 2
+  yield n
+
+
+a = my_gen()
+print(next(a)) # Hello world!
+print(next(a)) # Hello heaven!
+print(next(a)) # Hello hell!
+print(next(a)) StopIteration
+```
+
+Now we will see a generator expression (it is like list comprehension but much better, because we can handle a lot of
+of information without having performance problems):
+
+
+#Generator expression
+
+```python
+my_list = [0,1,4,7,9,10]
+
+my_second_list = [x*2 for x in my_list] #List comprehension
+my_second_gen = ()x*2 for x in my_list]) #Generator expression
+```
 -------------------------
 Improving our Fibonacci sequence
 
