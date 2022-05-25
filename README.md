@@ -35,13 +35,18 @@ Python Professional.
       * [Practicing static typing](#practicing-static-typing)
    * [Advanced Function Concepts
 ](#advanced-function-concepts)
+      * [Scope: scope of the variables](#scope-scope-of-the-variables)
+      * [Closures](#closures)
+      * [Programming closures](#programmin-closures)
+      * [Decorators](#decorators)
+      * [Programming decorators](#programming-decorators)
+      * [Iterators](#iterators)
    * [Advanced data structures
 ](#advanced-data-structures)
    * [Bonuses
 ](#bonuses)
    * [Conclusion
 ](#conclusion)
-
 
 
 
@@ -177,9 +182,8 @@ mypy module
 The mypy module is complemented by the typing module as it will allow you to display weak typing errors in Python.
 
 
-
---------------
 Practicing static typing
+--------------
 
 Following the tips of intermediate python course, from terminal:
 mkdir new_folder
@@ -202,8 +206,13 @@ code palindrome-py
 Make your code!!!
 mypy palindrome-py --check-untyped-defs
 
---------------------------------------------------
+
+Advanced Function Concepts
+============
+
 Scope: scope of the variables
+-----------
+
 
 The scope is the scope that the variables have. It depends on where you declare or initialize a variable to know if you have access. Golden Rule:
 
@@ -215,9 +224,8 @@ It is the region that corresponds to the scope of a function, where we can have 
 Global Scope
 By writing one or more variables in this region, they can be accessible from any part of the code.
 
-------------------------------------------------------
-closures
-
+Closures
+-----------
 
 rules for finding a closure
 
@@ -248,14 +256,14 @@ We must have a nested function
 The nested function must reference a value of a higher scope
 The function that wraps the nested function must also return it
 
--------------------------
 
 Programming closures
+-----------
 
 image
 
--------------------------
-decorators
+Decorators
+-----------
 
 A decorator is a function that receives another function as a parameter, adds things to it, and returns a different function. They have the same structure as Closures but instead of variables what is sent is a function. Example:
 
@@ -267,15 +275,19 @@ image
 
 This allows you to save code by implementing features (decorators) common to different functions:
 
--------------------------
+
 Programming decorators
+-----------
 
 
 
--------------------------
 Iterators
+-----------
+
 
 Advanced data structures
+============
+
 Iterators
 Before understanding what iterators are, we must first understand iterables.
 
