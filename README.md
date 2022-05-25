@@ -66,9 +66,16 @@ Python Professional.
 Introduction
 ============
 
-
-Linear Functions
+What do you need to know to take the course?
 -----------
+
+How does Python work?
+-----------
+
+
+How to organize your project folders
+-----------
+
 
 
 Static Typing
