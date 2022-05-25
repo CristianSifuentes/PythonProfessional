@@ -1,22 +1,5 @@
 # PythonProfessional
 
-How does Python work?
-
-Garbage collection ??
-Pycache ??
-
-
-How to organize your project folders?
-
-module??
-
-
-A module is any Python file. Generally, it contains code that you can reuse.
-
-🗄 A package is a set of modules. It always owns the __init__.py file.
-
-An example of organizing 🐍Python files is as follows.
-
 
 
 ## Table of Contents (Optional)
@@ -71,12 +54,20 @@ What do you need to know to take the course?
 
 How does Python work?
 -----------
+![Alt text](machine.png?raw=true "machine")
 
 
 How to organize your project folders
 -----------
 
 
+A module is any Python file. Generally, it contains code that you can reuse.
+
+🗄 A package is a set of modules. It always owns the __init__.py file.
+
+An example of organizing 🐍Python files is as follows.
+
+![Alt text](archivo.png?raw=true "organizing")
 
 Static Typing
 ============
