@@ -18,9 +18,49 @@ A module is any Python file. Generally, it contains code that you can reuse.
 An example of organizing 🐍Python files is as follows.
 
 
-----
+
+## Table of Contents (Optional)
+
+Python Professional.
+
+   * [Introduction
+](#introduction)
+      * [What do you need to know to take the course?](#what-do-you-need-to-know-to-take-the-course)
+      * [How does Python work?](#how-does-python-work)
+      * [How to organize your project folders](#how-to-organize-your-project-folders)
+   * [Static Typing
+](#static-typing)
+      * [What are types?](#what-are-types)
+      * [Static typing in Python](#static-typing-in-python)
+      * [Practicing static typing](#practicing-static-typing)
+   * [Advanced Function Concepts
+](#advanced-function-concepts)
+   * [Advanced data structures
+](#advanced-data-structures)
+   * [Bonuses
+](#bonuses)
+   * [Conclusion
+](#conclusion)
+
+
+
+
+
+
+Introduction
+============
+
+
+Linear Functions
+-----------
+
+
+Static Typing
+============
+
 
 What are types?
+-----------
 
 Typed is a classification of programming languages, we have four types:
 
@@ -42,9 +82,9 @@ Strong →→ More stringency with data types. Adding a number + a letter will t
 
 Weak →→ Less strict with data types. If I want to add number and letter, I would concatenate them as strings. Cast data types automatically. For example, PHP
 
---------
 
 Static typing in Python
+--------
 
 
 To make Python statically typed, it is necessary to add some additional syntax to what has been learned, and this feature can only be applied from version 3.6 onwards.
