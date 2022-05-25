@@ -37,19 +37,30 @@ Python Professional.
 ](#advanced-function-concepts)
       * [Scope: scope of the variables](#scope-scope-of-the-variables)
       * [Closures](#closures)
-      * [Programming closures](#programmin-closures)
+      * [Programming closures](#programming-closures)
       * [Decorators](#decorators)
       * [Programming decorators](#programming-decorators)
       * [Iterators](#iterators)
    * [Advanced data structures
 ](#advanced-data-structures)
+      * [Iterators](#iterators)
+      * [The Fibonacci Sequence](#the-fibonacci-sequence)
+      * [Generators](#generators)
+      * [Improving our Fibonacci sequence
+](#improving-our-fibonacci-sequence)
+      * [Sets](#sets)
+      * [Operations with sets](#operations-with-sets)
+      * [Removing duplicates from a list](#removing-duplicates-from-a-list)
    * [Bonuses
 ](#bonuses)
+      * [Date handling
+](#date-handling)
+      * [Time zones
+](#time-zones)
    * [Conclusion
 ](#conclusion)
-
-
-
+      * [You completed the trilogy. How to follow?
+](#you-completed-the-trilogy-how-to-follow)
 
 
 Introduction
@@ -280,15 +291,13 @@ Programming decorators
 -----------
 
 
+Advanced data structures
+============
 
 Iterators
 -----------
 
 
-Advanced data structures
-============
-
-Iterators
 Before understanding what iterators are, we must first understand iterables.
 
 They are all those objects that we can go through in a cycle. They are those data structures divisible into single elements that I can go through in a loop.
@@ -366,9 +375,10 @@ class EvenNumbers:
     else:
       raise StopIteration
 ```
--------------------------
-The Fibonacci Sequence
 
+
+The Fibonacci Sequence
+-----------
 
 
 ```python
@@ -411,8 +421,10 @@ if __name__ == '__main__':
         time.sleep(.05)
 
 ```
--------------------------
+
 generators
+-----------
+
 
 Sugar syntax for iterators. Generators are functions that store a state. It is an iterator written in a simpler way.
 
@@ -454,9 +466,10 @@ my_list = [0,1,4,7,9,10]
 my_second_list = [x*2 for x in my_list] #List comprehension
 my_second_gen = ()x*2 for x in my_list]) #Generator expression
 ```
--------------------------
-Improving our Fibonacci sequence
 
+
+Improving our Fibonacci sequence
+-----------
 
 ```python
 from time import sleep
@@ -473,8 +486,9 @@ if __name__ == "__main__":
         sleep(1)
 ```
 
----------------------------
+
 sets
+-----------
 
 Sets are a data structure very similar to lists in terms of their form, but they have certain particular characteristics:
 
@@ -552,8 +566,9 @@ Sets are immutable
 
 Sets are mutable; its elements are immutable.
 
----------------------------
+
 Operations with sets
+-----------
 
 Union
 Result of putting together all the elements that have both, combining both sets
@@ -605,12 +620,17 @@ set_3 = set_1 ^ set_2 #  -> {1, 2, 4, 5}
 # O de forma mas explicita
 set_1.symmetric_difference(set_2) #  -> {1, 2, 4, 5}
 ```
-----------------------------
+
 Removing duplicates from a list
+-----------
 
 
--------------------------------
-Date management
+Bonuses
+============
+
+Date handling
+-----------
+
 
 datetime is a date handling module.
 
@@ -664,8 +684,15 @@ formato_utc = datetime.utcnow()
 print(f'Formato UTC: {formato_utc}')
 
 ```
------------------------------
-Time zones
 
+Time zones
+-----------
+
+
+Conclusion
+============
+
+You completed the trilogy. How to follow?
+-----------
 
 
